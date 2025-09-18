@@ -5,7 +5,7 @@ Spectral calculations for multi-layer graphene as described in [QAE Phases in ga
 Use this script to calculate spectra. Requires MATLAB parallel computing toolbox as written. To remove this toolbox requirement change the annotated lines in "residue_map.m" and "grid_adapt.m". 
 
 ## graphene_eps.m, graphene_om.m
-Functions which define the appropriate interface operator. Change parameter values for number of layers, $gamma$, and $u$ as described in above reference inside of these functions ($\gamma=$ eps, $u = om$). 
+Functions which define the appropriate interface operator. Change parameter values for number of layers, $\gamma$, and $u$ as described in above reference inside of these functions ($\gamma=$ eps, $u$ = om). 
 
 ## make_H.m
 Use to generate and diagonalize bulk (constant coefficient) Hamiltonians of the system.

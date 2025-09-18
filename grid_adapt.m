@@ -90,6 +90,7 @@ for j = 1:L
     Level = j-1
     percent_done = nnz(Ae)/Ntot
     % Calculate residues that weren't interpolated:
+    % CHANGE TO FOR LOOP HERE IF NO PARALLEL CAPABILITY:
     parfor i = 1:NE
         for k = 1:Nk
             if Alr(i, k) == 0

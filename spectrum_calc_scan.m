@@ -26,6 +26,8 @@ tic;
 % Choose initial error e and calculate spectrum. Final error guaranteed is e*2^(1-L).
 e = 0.01;
 [Ae, AL, AR, ALR] = grid_adapt(kbound, Ebound, Nk, Ne, .01, L, B, m, x);
+% Functions "residue_map.m" and "uniform_grid.m" may also be used but do
+% not perform as well.
 t = toc/60
 
 % Plot spectrum:

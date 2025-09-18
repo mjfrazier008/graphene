@@ -6,6 +6,8 @@ Aedge = zeros(Ne, Nk);
 AL = zeros(size(Aedge));
 AR = zeros(size(Aedge));
 ALR = zeros(size(Aedge));
+
+% CHANGE TO FOR LOOP IF NO PARALLEL CAPABILITY:
 parfor i = 1:Nk
     ky = k(i);
     for j = 1:Ne
